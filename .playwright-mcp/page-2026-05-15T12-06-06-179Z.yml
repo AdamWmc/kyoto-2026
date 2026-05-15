@@ -1,0 +1,479 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "京都 2026" [ref=e4] [cursor=pointer]:
+        - /url: "#hero"
+      - generic [ref=e5]:
+        - link "Day 1" [ref=e6] [cursor=pointer]:
+          - /url: "#day1"
+        - link "Day 2" [ref=e7] [cursor=pointer]:
+          - /url: "#day2"
+        - link "Day 3" [ref=e8] [cursor=pointer]:
+          - /url: "#day3"
+        - link "Day 4" [ref=e9] [cursor=pointer]:
+          - /url: "#day4"
+        - link "Day 5" [ref=e10] [cursor=pointer]:
+          - /url: "#day5"
+  - banner [ref=e11]:
+    - generic: 京都
+    - generic [ref=e13]:
+      - paragraph [ref=e14]: 2026 · 06.24 — 06.28
+      - heading "京都" [level=1] [ref=e15]
+      - paragraph [ref=e16]: 五日・家の旅
+      - paragraph [ref=e17]:
+        - text: 千年古都，不只是看寺廟。
+        - text: 這是屬於四個人的夏天。
+      - generic [ref=e18]:
+        - generic [ref=e19]: 四人同行
+        - generic [ref=e20]: 湯之宿 松榮
+        - generic [ref=e21]: 5天4夜
+      - link "開始旅程" [ref=e22] [cursor=pointer]:
+        - /url: "#why"
+        - generic [ref=e23]: 開始旅程
+        - img [ref=e24]
+    - generic [ref=e26]: 向下滑動
+  - generic [ref=e28]:
+    - generic [ref=e29]:
+      - paragraph [ref=e30]: 為什麼是京都
+      - heading "這裡有別的地方給不了的東西" [level=2] [ref=e31]
+    - generic [ref=e32]:
+      - generic [ref=e33]:
+        - generic [ref=e34]: 千
+        - heading "千年積累" [level=3] [ref=e35]
+        - paragraph [ref=e36]: 794 年建都，1200 年的神社、寺廟、町家與花街，每條街都有故事。不需要想象歷史——你站的地方，就是歷史。
+      - generic [ref=e37]:
+        - generic [ref=e38]: 家
+        - heading "家的步調" [level=3] [ref=e39]
+        - paragraph [ref=e40]: 不趕行程，不搶景點。京都適合慢走，適合坐下來喝一碗抹茶，適合四個人邊走邊說說笑笑。
+      - generic [ref=e41]:
+        - generic [ref=e42]: 夏
+        - heading "夏日限定" [level=3] [ref=e43]
+        - paragraph [ref=e44]: 6 月底，鴨川納涼床正好開放，竹林最茂盛，宇治茶園最香。有些事情，只有這個季節才能體驗。
+  - generic [ref=e46]:
+    - generic [ref=e47]:
+      - paragraph [ref=e48]: 行程總覽
+      - heading "五天，一切都安排好了" [level=2] [ref=e49]
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - generic [ref=e52]: ✈
+        - generic [ref=e53]:
+          - paragraph [ref=e54]: 去程航班
+          - heading "樂桃 MM024" [level=3] [ref=e55]
+          - paragraph [ref=e56]: 台北桃園 TPE → 關西機場 KIX
+          - paragraph [ref=e57]: 6 月 24 日（三）出發
+      - generic [ref=e58]:
+        - generic [ref=e59]: ✈
+        - generic [ref=e60]:
+          - paragraph [ref=e61]: 回程航班
+          - heading "中華航空 CI153" [level=3] [ref=e62]
+          - paragraph [ref=e63]: 關西機場 KIX → 台北桃園 TPE
+          - paragraph [ref=e64]: 6 月 28 日（日）返台
+      - generic [ref=e65]:
+        - generic [ref=e66]: ⌂
+        - generic [ref=e67]:
+          - paragraph [ref=e68]: 住宿
+          - heading "湯之宿 松榮" [level=3] [ref=e69]
+          - paragraph [ref=e70]: 128 Nishishinyashiki Kaminocho, Shimogyo Ward, Kyoto
+          - paragraph [ref=e71]: 京都下京區 · 含溫泉設施 · 4 晚
+          - link "在 Google Maps 查看 →" [ref=e72] [cursor=pointer]:
+            - /url: https://www.google.com/maps?q=湯之宿+松榮+128+Nishishinyashiki+Kaminocho,+Shimogyo+Ward,+Kyoto
+  - generic [ref=e73]:
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - generic [ref=e77]: Day 1
+        - generic [ref=e78]: 6 月 24 日（三）
+      - heading "抵達京都 祇園夜間導覽" [level=2] [ref=e79]:
+        - text: 抵達京都
+        - text: 祇園夜間導覽
+      - paragraph [ref=e80]: 第一天不趕，先感受這座城市的夜。
+    - generic [ref=e81]:
+      - generic [ref=e82]:
+        - generic [ref=e83]:
+          - generic [ref=e84]: 上午
+          - generic [ref=e86]:
+            - heading "樂桃 MM024 出發" [level=4] [ref=e87]
+            - paragraph [ref=e88]: 從台北桃園機場起飛，前往大阪關西機場（KIX）。
+        - generic [ref=e89]:
+          - generic [ref=e90]: 下午
+          - generic [ref=e92]:
+            - heading "抵達關西機場 → 前往京都" [level=4] [ref=e93]
+            - paragraph [ref=e94]: 領行李後，可搭 Haruka 特急列車（約 75 分鐘）或機場巴士（約 90 分鐘）到京都車站。行李多可從京都車站搭計程車到飯店。
+        - generic [ref=e95]:
+          - generic [ref=e96]: 傍晚
+          - generic [ref=e98]:
+            - heading "入住湯之宿 松榮" [level=4] [ref=e99]
+            - paragraph [ref=e100]: 放下行李，稍作休息。有溫泉設施，晚上回來泡個澡是最好的收尾。
+        - generic [ref=e101]:
+          - generic [ref=e102]: 19:00
+          - generic [ref=e104]:
+            - heading "祇園夜間導覽 · Klook 小團體行程" [level=4] [ref=e105]
+            - paragraph [ref=e106]: 跟著英語 / 日語導覽員走進祇園，看花街燈火，聽京都的夜晚故事。
+            - link "查看 Klook 行程 →" [ref=e107] [cursor=pointer]:
+              - /url: https://www.klook.com/zh-TW/activity/87999-kyoto-gion-night-walk-small-group-guided-tour-walking-tour/
+      - generic [ref=e109]:
+        - generic [ref=e110]:
+          - generic [ref=e111]: 花街 · 夜間
+          - heading "祇園・花見小路" [level=3] [ref=e112]
+        - generic [ref=e113]:
+          - paragraph [ref=e114]: 祇園是江戶時代建立的「花街」——不只是藝伎文化，而是一整套圍繞宴席的美學體系：茶屋（ochaya）、舞妓、藝妓、懷石料理、酒宴、三味線。
+          - paragraph [ref=e115]: 你在花見小路走的每一步，都曾經有武士、商人、文人走過。八坂神社是祇園的根，主祭祇園信仰，每年 7 月的祇園祭已連辦超過 1100 年。
+          - paragraph [ref=e116]:
+            - strong [ref=e117]: 為什麼選夜晚？
+            - text: 白天遊客多，夜晚才看得到燈籠點亮、町家格子窗透出的溫暖光線——那是祇園真正的樣子。第一晚先跟導覽員建立脈絡，明天走東山才會更有感受。
+        - link "在 Google Maps 查看 →" [ref=e118] [cursor=pointer]:
+          - /url: https://www.google.com/maps/search/花見小路+祇園+京都
+      - generic [ref=e119]:
+        - generic [ref=e120]: 交通
+        - generic [ref=e121]:
+          - heading "關西機場 → 京都" [level=4] [ref=e122]
+          - list [ref=e123]:
+            - listitem [ref=e124]:
+              - text: ·
+              - strong [ref=e125]: Haruka 特急
+              - text: ：關西機場 → 京都車站，約 75 分鐘，不用換車，推薦。
+            - listitem [ref=e126]:
+              - text: ·
+              - strong [ref=e127]: 機場巴士
+              - text: ：關西機場 → 京都市區，約 90 分鐘，行李方便。
+            - listitem [ref=e128]: · 抵達京都車站後，飯店建議搭計程車（下京區，約 10 分鐘）。
+  - generic [ref=e129]:
+    - generic [ref=e131]:
+      - generic [ref=e132]:
+        - generic [ref=e133]: Day 2
+        - generic [ref=e134]: 6 月 25 日（四）
+      - heading "清水寺 · 東山 鴨川納涼床" [level=2] [ref=e135]:
+        - text: 清水寺 · 東山
+        - text: 鴨川納涼床
+      - paragraph [ref=e136]: 京都經典日——白天走古道，晚上坐在河邊吃夏日晚餐。
+    - generic [ref=e137]:
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - generic [ref=e140]: 08:00
+          - generic [ref=e142]:
+            - heading "出發前往清水寺" [level=4] [ref=e143]
+            - paragraph [ref=e144]: 趁觀光客還不多，先搶到清水舞台最好的視角。
+        - generic [ref=e145]:
+          - generic [ref=e146]: 09:00
+          - generic [ref=e148]:
+            - heading "清水寺 · 音羽瀑布 · 弁慶試煉" [level=4] [ref=e149]
+            - paragraph [ref=e150]: 本堂舞台、三道音羽瀑布（選一條喝），以及——弁慶的鐵下駄家庭挑戰賽。
+        - generic [ref=e151]:
+          - generic [ref=e152]: 10:45
+          - generic [ref=e154]:
+            - heading "三年坂 · 二年坂 · 八坂塔" [level=4] [ref=e155]
+            - paragraph [ref=e156]: 沿石板坡道向北走，保留明治時代的街景，兩側都是傳統工藝品與京都甜點。
+        - generic [ref=e157]:
+          - generic [ref=e158]: 13:00
+          - generic [ref=e160]:
+            - heading "午餐 → 錦市場" [level=4] [ref=e161]
+            - paragraph [ref=e162]: 向河原町方向移動，午餐後逛錦市場。可以吃玉子燒、豆腐、醃漬物、各種京都小吃。
+        - generic [ref=e163]:
+          - generic [ref=e164]: 15:30
+          - generic [ref=e166]:
+            - heading "回飯店休息" [level=4] [ref=e167]
+            - paragraph [ref=e168]: 清水寺到東山走路不少，下午讓爸媽泡個澡休息，晚上才有體力好好吃飯。
+        - generic [ref=e169]:
+          - generic [ref=e170]: 18:30
+          - generic [ref=e172]:
+            - heading "鴨川納涼床 / 先斗町晚餐" [level=4] [ref=e173]
+            - paragraph [ref=e174]: 6 月底正好是納涼床開放季節。提前訂位，坐在鴨川邊，看流水，吃夏日料理。
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - generic [ref=e177]:
+            - generic [ref=e178]: 世界遺產 · 佛寺
+            - heading "清水寺" [level=3] [ref=e179]
+          - generic [ref=e180]:
+            - paragraph [ref=e181]: 建立於西元 778 年，現存本堂建於 1633 年（德川家光時代），懸在音羽山懸崖上，以 139 根大木柱支撐——沒有用一根釘子。
+            - paragraph [ref=e182]: 日語諺語「清水の舞台から飛び降りる」（從清水舞台跳下去）相當於中文的背水一戰，用來形容下定決心做大事。你站上舞台時，腳下是四百年的歷史。
+            - paragraph [ref=e183]: 音羽瀑布有三道水流：學問、戀愛、長壽，傳統上只能選一條喝——你選哪條，代表你最在乎什麼。
+          - link "在 Google Maps 查看 →" [ref=e184] [cursor=pointer]:
+            - /url: https://www.google.com/maps/search/清水寺+京都
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - generic [ref=e187]: 七不思議 · 家庭挑戰
+            - heading "弁慶の鐵下駄" [level=3] [ref=e188]
+          - generic [ref=e189]:
+            - paragraph [ref=e190]: 清水寺七大不思議（七個謎）之一。傳說這雙鐵下駄是武藏坊弁慶（源義經的忠臣）留下的，重達 90 公斤，一般人無法舉起。
+            - paragraph [ref=e191]:
+              - text: 旁邊有一支較小的「弁慶的錫杖」，讓參拜者試舉。
+              - strong [ref=e192]: 可以安排成爸爸的試煉。
+              - text: 這種互動小任務，讓景點不只是「看看就好」。
+          - link "在 Google Maps 查看 →" [ref=e193] [cursor=pointer]:
+            - /url: https://www.google.com/maps/search/清水寺+弁慶+鐵下駄
+        - generic [ref=e194]:
+          - generic [ref=e195]:
+            - generic [ref=e196]: 傳統街道
+            - heading "三年坂 · 二年坂" [level=3] [ref=e197]
+          - generic [ref=e198]:
+            - paragraph [ref=e199]: 傳說在三年坂跌倒，壽命縮短三年；二年坂跌倒，縮短兩年。沒有人知道這個故事從哪裡來，但大家都走得特別小心。
+            - paragraph [ref=e200]: 這條石板街是「重要傳統建造物群保存地區」，每一棟建築都受法律保護不得改建。兩旁是扇子、漆器、和菓子、抹茶冰淇淋，慢慢逛不用急。
+          - link "在 Google Maps 查看 →" [ref=e201] [cursor=pointer]:
+            - /url: https://www.google.com/maps/search/三年坂+二年坂+京都
+        - generic [ref=e202]:
+          - generic [ref=e203]:
+            - generic [ref=e204]: 400 年市場
+            - heading "錦市場" [level=3] [ref=e205]
+          - generic [ref=e206]:
+            - paragraph [ref=e207]: 被稱為「京の台所」（京都的廚房）。390 公尺長的窄街，兩側 130 多家店，每家都非常專業——賣豆腐的只賣豆腐，賣醬菜的只賣醬菜。
+            - paragraph [ref=e208]: 可以試吃、買小吃、找伴手禮。推薦玉子燒、川魚、京漬物。不喜歡魚腥的可以找和菓子。這裡是吃飽午餐之後慢慢逛的地方。
+          - link "在 Google Maps 查看 →" [ref=e209] [cursor=pointer]:
+            - /url: https://www.google.com/maps/search/錦市場+京都
+        - generic [ref=e210]:
+          - generic [ref=e211]:
+            - generic [ref=e212]: 夏日限定 · 晚餐
+            - heading "鴨川納涼床" [level=3] [ref=e213]
+          - generic [ref=e214]:
+            - paragraph [ref=e215]: 江戶時代開始，京都人在鴨川旁搭起木製平台（「床」），每年 5 月到 9 月開放，稱為納涼床，是純正的京都夏日傳統。6 月底正好在開放季節。
+            - paragraph [ref=e216]: 先斗町（ぽんとちょう）是最集中的區域，沿鴨川一排都是有床位的餐廳。夏夜坐在水邊，看鴨川流水和對岸的燈光，配上京料理或居酒屋料理。
+            - paragraph [ref=e217]:
+              - strong [ref=e218]: 建議提前 1-2 週訂位
+              - text: ，選 18:30 入座，可以看到天色漸暗，感受白天到夜晚的轉換。
+          - link "在 Google Maps 查看 →" [ref=e219] [cursor=pointer]:
+            - /url: https://www.google.com/maps/search/先斗町+鴨川+京都
+      - generic [ref=e220]:
+        - generic [ref=e221]: 提醒
+        - generic [ref=e222]:
+          - heading "Day 2 實用提醒" [level=4] [ref=e223]
+          - list [ref=e224]:
+            - listitem [ref=e225]: · 清水寺早上人少，08:00 前到最理想，大概 09:30 後人潮明顯增加。
+            - listitem [ref=e226]: · 三年坂石板路有點滑，媽媽建議穿好走的平底鞋。
+            - listitem [ref=e227]: · 鴨川納涼床一定要提前訂位，現場通常沒有位子。
+            - listitem [ref=e228]: · 從清水寺到先斗町步行約 25 分鐘，或搭公車（206 號）。
+  - generic [ref=e229]:
+    - generic [ref=e231]:
+      - generic [ref=e232]:
+        - generic [ref=e233]: Day 3
+        - generic [ref=e234]: 6 月 26 日（五）
+      - heading "嵐山小火車 保津川一日遊" [level=2] [ref=e235]:
+        - text: 嵐山小火車
+        - text: 保津川一日遊
+      - paragraph [ref=e236]: 京都不只是寺廟——這天是山、水、竹林。
+    - generic [ref=e237]:
+      - generic [ref=e239]:
+        - paragraph [ref=e240]: 已規劃活動
+        - heading "嵐山小火車 + 保津川遊船 / 漂流一日遊" [level=3] [ref=e241]
+        - paragraph [ref=e242]: 含嵯峨野觀光小火車與保津川遊船，由 Klook 代理，集合出發，不需要自己安排交通與票務。
+        - link "查看 Klook 行程 →" [ref=e243] [cursor=pointer]:
+          - /url: https://www.klook.com/zh-TW/activity/154891-arashiyama-train-hozugawa-river-rafting-day-tour-from-osaka-kyoto/
+      - generic [ref=e244]:
+        - generic [ref=e245]:
+          - generic [ref=e246]: 早上
+          - generic [ref=e248]:
+            - heading "依 Klook 集合點出發" [level=4] [ref=e249]
+            - paragraph [ref=e250]: 確認集合地點與時間（詳見 Klook 確認信）。
+        - generic [ref=e251]:
+          - generic [ref=e252]: 上午
+          - generic [ref=e254]:
+            - heading "嵯峨野觀光小火車" [level=4] [ref=e255]
+            - paragraph [ref=e256]: 從嵯峨出發到亀岡，沿保津川峽谷行駛 7.3 公里，是日本最知名的觀光鐵道之一。
+        - generic [ref=e257]:
+          - generic [ref=e258]: 中午
+          - generic [ref=e260]:
+            - heading "嵐山周邊午餐" [level=4] [ref=e261]
+            - paragraph [ref=e262]: 嵐山有很多選擇，湯豆腐、抹茶蕎麥麵、嵯峨豆腐都值得試試。
+        - generic [ref=e263]:
+          - generic [ref=e264]: 下午
+          - generic [ref=e266]:
+            - heading "保津川遊船 / 漂流" [level=4] [ref=e267]
+            - paragraph [ref=e268]: 峽谷間的河流體驗。全程約 2 小時，沿途有急流也有平靜水面，是嵐山最難忘的活動。
+        - generic [ref=e269]:
+          - generic [ref=e270]: 傍晚
+          - generic [ref=e272]:
+            - heading "竹林 · 渡月橋 → 回京都" [level=4] [ref=e273]
+            - paragraph [ref=e274]: 若還有時間，走一走竹林の道。傍晚回飯店，今晚不用再出去——好好泡澡休息。
+      - generic [ref=e275]:
+        - generic [ref=e276]:
+          - generic [ref=e277]:
+            - generic [ref=e278]: 觀光鐵道
+            - heading "嵯峨野觀光鐵道" [level=3] [ref=e279]
+          - generic [ref=e280]:
+            - paragraph [ref=e281]: 1991 年 JR 嵯峨野線改線後，舊線廢棄不用。地方政府將舊軌道改建為觀光小火車，沿保津川峽谷行駛 7.3 公里，全程約 25 分鐘。
+            - paragraph [ref=e282]: 有一節「The Rich 號」是開放式展望車廂，可以直接感受山谷風——6 月底偶爾下雨，留意當天天氣選車廂。
+        - generic [ref=e283]:
+          - generic [ref=e284]:
+            - generic [ref=e285]: 歷史水路 · 體驗
+            - heading "保津川" [level=3] [ref=e286]
+          - generic [ref=e287]:
+            - paragraph [ref=e288]: 江戶時代，保津川是丹波山地木材運往京都的水路。1606 年，商人角倉了以投資開鑿，讓船可以通行峽谷，帶動了京都的城市建設。
+            - paragraph [ref=e289]: 現在這條河已沒有木材船，有的是遊客乘著船，看峽谷、看激流、看倒映在水面上的山。這就是歷史轉身的方式。
+        - generic [ref=e290]:
+          - generic [ref=e291]:
+            - generic [ref=e292]: 音景百選 · 竹林
+            - heading "竹林の道 · 渡月橋" [level=3] [ref=e293]
+          - generic [ref=e294]:
+            - paragraph [ref=e295]: 從天龍寺北門延伸的竹林步道，竹高超過 20 公尺，直徑可達 20 公分。風吹過時，竹葉的聲音已被收錄進日本「音風景百選」——一個保護聲音景觀的文化指定。
+            - paragraph [ref=e296]: 渡月橋橫跨桂川（在嵐山境內改名大堰川），橋名來自鐮倉時代龜山天皇的詩句：「くまなき月の渡るに似る」（有如皎潔月光橫渡江面）。
+            - link "在 Google Maps 查看 →" [ref=e297] [cursor=pointer]:
+              - /url: https://www.google.com/maps/search/嵐山+竹林+京都
+      - generic [ref=e298]:
+        - generic [ref=e299]: 提醒
+        - generic [ref=e300]:
+          - heading "Day 3 提醒" [level=4] [ref=e301]
+          - list [ref=e302]:
+            - listitem [ref=e303]: · 保津川漂流會濕，準備換洗衣物，重要的東西放防水袋。
+            - listitem [ref=e304]: · 這天行程比較動態，晚上不要再安排夜間景點——好好休息。
+            - listitem [ref=e305]: · 嵐山的竹林步道清早最美（人少 + 光線好），但當天已有活動，下午去即可。
+  - generic [ref=e306]:
+    - generic [ref=e308]:
+      - generic [ref=e309]:
+        - generic [ref=e310]: Day 4
+        - generic [ref=e311]: 6 月 27 日（六）
+      - heading "彈性路線日 早上決定去哪" [level=2] [ref=e312]:
+        - text: 彈性路線日
+        - text: 早上決定去哪
+      - paragraph [ref=e313]: 嵐山可能比較累，這天看體力和天氣，三條路線任選。
+    - generic [ref=e315]:
+      - generic [ref=e316]:
+        - button "路線 A 宇治抹茶" [ref=e317] [cursor=pointer]:
+          - generic [ref=e318]: 路線 A
+          - generic [ref=e319]: 宇治抹茶
+        - button "路線 B 二條城" [ref=e320] [cursor=pointer]:
+          - generic [ref=e321]: 路線 B
+          - generic [ref=e322]: 二條城
+        - button "路線 C 金閣寺" [ref=e323] [cursor=pointer]:
+          - generic [ref=e324]: 路線 C
+          - generic [ref=e325]: 金閣寺
+      - generic [ref=e327]: 最推薦 · 適合放慢步調，想吃抹茶甜點
+      - generic [ref=e328]:
+        - generic [ref=e329]:
+          - heading "宇治抹茶慢旅行" [level=3] [ref=e330]
+          - paragraph [ref=e331]: 適合：天氣不錯、想放慢、想吃甜點買茶。
+        - generic [ref=e332]:
+          - generic [ref=e333]:
+            - generic [ref=e334]: 09:30
+            - generic [ref=e336]:
+              - heading "京都車站搭 JR 奈良線" [level=4] [ref=e337]
+              - paragraph [ref=e338]: 到宇治站，車程約 17 分鐘。
+          - generic [ref=e339]:
+            - generic [ref=e340]: 10:15
+            - generic [ref=e342]:
+              - heading "平等院・鳳翔館・庭園" [level=4] [ref=e343]
+              - paragraph [ref=e344]: 世界遺產，10 元硬幣上的那座寺。建議先參觀庭園，再進鳳翔館看國寶。
+          - generic [ref=e345]:
+            - generic [ref=e346]: 12:30
+            - generic [ref=e348]:
+              - heading "宇治川旁午餐" [level=4] [ref=e349]
+              - paragraph [ref=e350]: 有些老字號茶屋也供應午餐定食，不用另外找地方。
+          - generic [ref=e351]:
+            - generic [ref=e352]: 14:00
+            - generic [ref=e354]:
+              - heading "抹茶甜點 · 買茶帶回家" [level=4] [ref=e355]
+              - paragraph [ref=e356]: 推薦：中村藤吉本店（明治時代老店）、伊藤久右衛門、通圓茶屋（最古老）。
+          - generic [ref=e357]:
+            - generic [ref=e358]: 16:30
+            - generic [ref=e360]:
+              - heading "搭 JR 回京都" [level=4] [ref=e361]
+              - paragraph [ref=e362]: 晚上可以在河原町或京都車站附近吃飯，輕鬆收尾。
+        - generic [ref=e364]:
+          - generic [ref=e365]:
+            - generic [ref=e366]: 世界遺產 · 10 元硬幣
+            - heading "平等院鳳凰堂" [level=3] [ref=e367]
+          - generic [ref=e368]:
+            - paragraph [ref=e369]: 西元 1052 年，攝政藤原頼通將父親道長的別莊改建為寺院，隔年建造鳳凰堂作為阿彌陀堂。
+            - paragraph [ref=e370]: 這棟建築不是偶然好看——它是淨土信仰的具象化，設計目的就是讓你覺得自己站在阿彌陀如來的西方極樂世界門口。倒映在阿字池中的鳳凰堂，是這個效果的一部分。
+            - paragraph [ref=e371]: 現在它出現在日本 10 円硬幣背面。把硬幣拿出來比對一下，是真實存在的趣味。
+          - link "在 Google Maps 查看 →" [ref=e372] [cursor=pointer]:
+            - /url: https://www.google.com/maps/search/平等院+宇治
+  - generic [ref=e373]:
+    - generic [ref=e375]:
+      - generic [ref=e376]:
+        - generic [ref=e377]: Day 5
+        - generic [ref=e378]: 6 月 28 日（日）
+      - heading "京都車站 平安回家" [level=2] [ref=e379]:
+        - text: 京都車站
+        - text: 平安回家
+      - paragraph [ref=e380]: 回程日不跑遠，穩穩打包，帶上所有的記憶。
+    - generic [ref=e381]:
+      - generic [ref=e382]:
+        - generic [ref=e383]:
+          - generic [ref=e384]: 09:00
+          - generic [ref=e386]:
+            - heading "退房 · 整理行李" [level=4] [ref=e387]
+            - paragraph [ref=e388]: 確認所有物品，貴重物品放隨身行李，伴手禮妥善打包。
+        - generic [ref=e389]:
+          - generic [ref=e390]: 10:00
+          - generic [ref=e392]:
+            - heading "京都車站伴手禮採買" [level=4] [ref=e393]
+            - paragraph [ref=e394]: JR 京都伊勢丹地下街、八条口周邊。京都名產幾乎都在這裡，不用另外跑景點。
+        - generic [ref=e395]:
+          - generic [ref=e396]: 中午
+          - generic [ref=e398]:
+            - heading "前往關西機場" [level=4] [ref=e399]
+            - paragraph [ref=e400]: 京都車站搭 Haruka 特急，約 75 分鐘到達關西機場。建議提早出發。
+        - generic [ref=e401]:
+          - generic [ref=e402]: 下午
+          - generic [ref=e404]:
+            - heading "中華航空 CI153 返台" [level=4] [ref=e405]
+            - paragraph [ref=e406]: 關西機場 KIX → 台北桃園 TPE。航班時刻請出發前再次確認。
+      - generic [ref=e407]:
+        - heading "京都車站必買清單" [level=3] [ref=e408]
+        - generic [ref=e409]:
+          - generic [ref=e410]:
+            - generic [ref=e411]: 🍡
+            - generic [ref=e412]: 八橋 / 生八橋
+          - generic [ref=e413]:
+            - generic [ref=e414]: 🍵
+            - generic [ref=e415]: 抹茶系甜點
+          - generic [ref=e416]:
+            - generic [ref=e417]: 🥒
+            - generic [ref=e418]: 京都醃漬物
+          - generic [ref=e419]:
+            - generic [ref=e420]: 🫙
+            - generic [ref=e421]: 宇治抹茶茶葉
+          - generic [ref=e422]:
+            - generic [ref=e423]: 🧴
+            - generic [ref=e424]: 京都護膚品牌
+          - generic [ref=e425]:
+            - generic [ref=e426]: 📿
+            - generic [ref=e427]: 寺廟護身符
+      - generic [ref=e428]:
+        - generic [ref=e429]: 注意
+        - generic [ref=e430]:
+          - heading "回程日鐵則" [level=4] [ref=e431]
+          - list [ref=e432]:
+            - listitem [ref=e433]: · 不要安排清水寺、伏見稻荷、嵐山等需要移動的景點。
+            - listitem [ref=e434]: · 機場要提前 2 小時以上到達，避免結帳高峰與安檢排隊。
+            - listitem [ref=e435]: · 搭 Haruka 建議提前訂位，人多時站票很不舒服。
+            - listitem [ref=e436]: · 液體、大型伴手禮記得打包進托運行李，不要帶上機。
+  - contentinfo [ref=e437]:
+    - generic [ref=e438]:
+      - generic [ref=e439]:
+        - generic [ref=e440]:
+          - heading "住宿" [level=4] [ref=e441]
+          - paragraph [ref=e442]: 湯之宿 松榮
+          - paragraph [ref=e443]:
+            - text: 128 Nishishinyashiki Kaminocho
+            - text: Shimogyo Ward, Kyoto 600-8826
+          - link "在 Google Maps 查看 →" [ref=e444] [cursor=pointer]:
+            - /url: https://www.google.com/maps?q=湯之宿+松榮+128+Nishishinyashiki+Kaminocho,+Shimogyo+Ward,+Kyoto,+600-8826日本
+        - generic [ref=e445]:
+          - heading "行程" [level=4] [ref=e446]
+          - list [ref=e447]:
+            - listitem [ref=e448]:
+              - link "Day 1 · 抵達 · 祇園夜遊" [ref=e449] [cursor=pointer]:
+                - /url: "#day1"
+            - listitem [ref=e450]:
+              - link "Day 2 · 清水寺 · 鴨川" [ref=e451] [cursor=pointer]:
+                - /url: "#day2"
+            - listitem [ref=e452]:
+              - link "Day 3 · 嵐山 · 保津川" [ref=e453] [cursor=pointer]:
+                - /url: "#day3"
+            - listitem [ref=e454]:
+              - link "Day 4 · 彈性路線" [ref=e455] [cursor=pointer]:
+                - /url: "#day4"
+            - listitem [ref=e456]:
+              - link "Day 5 · 回程" [ref=e457] [cursor=pointer]:
+                - /url: "#day5"
+        - generic [ref=e458]:
+          - heading "Klook 行程" [level=4] [ref=e459]
+          - list [ref=e460]:
+            - listitem [ref=e461]:
+              - link "祇園夜間導覽 →" [ref=e462] [cursor=pointer]:
+                - /url: https://www.klook.com/zh-TW/activity/87999-kyoto-gion-night-walk-small-group-guided-tour-walking-tour/
+            - listitem [ref=e463]:
+              - link "嵐山小火車 + 保津川 →" [ref=e464] [cursor=pointer]:
+                - /url: https://www.klook.com/zh-TW/activity/154891-arashiyama-train-hozugawa-river-rafting-day-tour-from-osaka-kyoto/
+      - paragraph [ref=e466]: 京都五日 · 家の旅 · 2026 · 航班時刻請出發前再次確認官方資訊
+  - link "回到頂部":
+    - /url: "#hero"
+    - text: ↑

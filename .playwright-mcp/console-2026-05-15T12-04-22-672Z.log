@@ -1,0 +1,2 @@
+[      20ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:9001/Users/mcwu1310/claude/kyoto/index.html:0
+[      28ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:9001/favicon.ico:0

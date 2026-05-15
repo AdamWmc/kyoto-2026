@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="2026 年 6 月，京都五日家庭旅行——祇園夜遊、清水寺、嵐山小火車、保津川、宇治抹茶。">
+  <title>京都五日 · 家の旅 · 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">京都 2026</a>
+      <div class="nav-days" id="navDays">
+        <a href="#day1" class="nav-day" data-day="1">Day 1</a>
+        <a href="#day2" class="nav-day" data-day="2">Day 2</a>
+        <a href="#day3" class="nav-day" data-day="3">Day 3</a>
+        <a href="#day4" class="nav-day" data-day="4">Day 4</a>
+        <a href="#day5" class="nav-day" data-day="5">Day 5</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <header class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-watermark">京都</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">2026 · 06.24 — 06.28</p>
+      <h1 class="hero-title">京都</h1>
+      <p class="hero-subtitle">五日・家の旅</p>
+      <p class="hero-tagline">
+        千年古都，不只是看寺廟。<br>這是屬於四個人的夏天。
+      </p>
+      <div class="hero-chips">
+        <span class="chip">四人同行</span>
+        <span class="chip">湯之宿 松榮</span>
+        <span class="chip">5天4夜</span>
+      </div>
+      <a href="#why" class="hero-cta">
+        <span>開始旅程</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M8 3v10M3 8l5 5 5-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    <div class="hero-scroll-hint">向下滑動</div>
+  </header>
+
+  <!-- ── Why Kyoto ── -->
+  <section class="why-section" id="why">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">為什麼是京都</p>
+        <h2 class="section-title">這裡有別的地方給不了的東西</h2>
+      </div>
+      <div class="pillars">
+        <div class="pillar reveal">
+          <div class="pillar-glyph">千</div>
+          <h3>千年積累</h3>
+          <p>794 年建都，1200 年的神社、寺廟、町家與花街，每條街都有故事。不需要想象歷史——你站的地方，就是歷史。</p>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar-glyph">家</div>
+          <h3>家的步調</h3>
+          <p>不趕行程，不搶景點。京都適合慢走，適合坐下來喝一碗抹茶，適合四個人邊走邊說說笑笑。</p>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar-glyph">夏</div>
+          <h3>夏日限定</h3>
+          <p>6 月底，鴨川納涼床正好開放，竹林最茂盛，宇治茶園最香。有些事情，只有這個季節才能體驗。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Trip Overview ── -->
+  <section class="overview-section" id="overview">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">行程總覽</p>
+        <h2 class="section-title">五天，一切都安排好了</h2>
+      </div>
+      <div class="overview-grid">
+
+        <div class="info-card reveal">
+          <div class="info-card-icon">✈</div>
+          <div class="info-card-body">
+            <p class="info-label">去程航班</p>
+            <h3 class="info-title">樂桃 MM024</h3>
+            <p class="info-detail">台北桃園 TPE → 關西機場 KIX</p>
+            <p class="info-sub">6 月 24 日（三）出發</p>
+          </div>
+        </div>
+
+        <div class="info-card reveal">
+          <div class="info-card-icon">✈</div>
+          <div class="info-card-body">
+            <p class="info-label">回程航班</p>
+            <h3 class="info-title">中華航空 CI153</h3>
+            <p class="info-detail">關西機場 KIX → 台北桃園 TPE</p>
+            <p class="info-sub">6 月 28 日（日）返台</p>
+          </div>
+        </div>
+
+        <div class="info-card info-card--wide reveal">
+          <div class="info-card-icon">⌂</div>
+          <div class="info-card-body">
+            <p class="info-label">住宿</p>
+            <h3 class="info-title">湯之宿 松榮</h3>
+            <p class="info-detail">128 Nishishinyashiki Kaminocho, Shimogyo Ward, Kyoto</p>
+            <p class="info-sub">京都下京區 · 含溫泉設施 · 4 晚</p>
+            <a href="https://www.google.com/maps?q=湯之宿+松榮+128+Nishishinyashiki+Kaminocho,+Shimogyo+Ward,+Kyoto" target="_blank" rel="noopener" class="map-link">
+              在 Google Maps 查看 →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       DAY 1 · 抵達京都 + 祇園夜間導覽
+  ══════════════════════════════════════ -->
+  <section id="day1" class="day-section theme-night">
+    <div class="day-header">
+      <div class="container">
+        <div class="day-badge">
+          <span class="day-number">Day 1</span>
+          <span class="day-date">6 月 24 日（三）</span>
+        </div>
+        <h2 class="day-title">抵達京都<br>祇園夜間導覽</h2>
+        <p class="day-theme-text">第一天不趕，先感受這座城市的夜。</p>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-time">上午</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>樂桃 MM024 出發</h4>
+            <p>從台北桃園機場起飛，前往大阪關西機場（KIX）。</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">下午</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>抵達關西機場 → 前往京都</h4>
+            <p>領行李後，可搭 Haruka 特急列車（約 75 分鐘）或機場巴士（約 90 分鐘）到京都車站。行李多可從京都車站搭計程車到飯店。</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">傍晚</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>入住湯之宿 松榮</h4>
+            <p>放下行李，稍作休息。有溫泉設施，晚上回來泡個澡是最好的收尾。</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">19:00</div>
+          <div class="timeline-dot timeline-dot--highlight"></div>
+          <div class="timeline-content">
+            <h4>祇園夜間導覽 · Klook 小團體行程</h4>
+            <p>跟著英語 / 日語導覽員走進祇園，看花街燈火，聽京都的夜晚故事。</p>
+            <a href="https://www.klook.com/zh-TW/activity/87999-kyoto-gion-night-walk-small-group-guided-tour-walking-tour/" target="_blank" rel="noopener" class="klook-link">
+              查看 Klook 行程 →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="spots-grid">
+        <div class="spot-card reveal">
+          <div class="spot-card-header">
+            <span class="spot-tag">花街 · 夜間</span>
+            <h3 class="spot-name">祇園・花見小路</h3>
+          </div>
+          <div class="spot-story">
+            <p>祇園是江戶時代建立的「花街」——不只是藝伎文化，而是一整套圍繞宴席的美學體系：茶屋（ochaya）、舞妓、藝妓、懷石料理、酒宴、三味線。</p>
+            <p>你在花見小路走的每一步，都曾經有武士、商人、文人走過。八坂神社是祇園的根，主祭祇園信仰，每年 7 月的祇園祭已連辦超過 1100 年。</p>
+            <p><strong>為什麼選夜晚？</strong>白天遊客多，夜晚才看得到燈籠點亮、町家格子窗透出的溫暖光線——那是祇園真正的樣子。第一晚先跟導覽員建立脈絡，明天走東山才會更有感受。</p>
+          </div>
+          <a href="https://www.google.com/maps/search/花見小路+祇園+京都" target="_blank" rel="noopener" class="map-link">
+            在 Google Maps 查看 →
+          </a>
+        </div>
+      </div>
+
+      <div class="tip-card reveal">
+        <div class="tip-icon">交通</div>
+        <div class="tip-body">
+          <h4>關西機場 → 京都</h4>
+          <ul>
+            <li><strong>Haruka 特急</strong>：關西機場 → 京都車站，約 75 分鐘，不用換車，推薦。</li>
+            <li><strong>機場巴士</strong>：關西機場 → 京都市區，約 90 分鐘，行李方便。</li>
+            <li>抵達京都車站後，飯店建議搭計程車（下京區，約 10 分鐘）。</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       DAY 2 · 清水寺 + 東山 + 鴨川納涼床
+  ══════════════════════════════════════ -->
+  <section id="day2" class="day-section theme-vermillion">
+    <div class="day-header">
+      <div class="container">
+        <div class="day-badge">
+          <span class="day-number">Day 2</span>
+          <span class="day-date">6 月 25 日（四）</span>
+        </div>
+        <h2 class="day-title">清水寺 · 東山<br>鴨川納涼床</h2>
+        <p class="day-theme-text">京都經典日——白天走古道，晚上坐在河邊吃夏日晚餐。</p>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-time">08:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>出發前往清水寺</h4>
+            <p>趁觀光客還不多，先搶到清水舞台最好的視角。</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">09:00</div>
+          <div class="timeline-dot timeline-dot--highlight"></div>
+          <div class="timeline-content">
+            <h4>清水寺 · 音羽瀑布 · 弁慶試煉</h4>
+            <p>本堂舞台、三道音羽瀑布（選一條喝），以及——弁慶的鐵下駄家庭挑戰賽。</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">10:45</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>三年坂 · 二年坂 · 八坂塔</h4>
+            <p>沿石板坡道向北走，保留明治時代的街景，兩側都是傳統工藝品與京都甜點。</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">13:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>午餐 → 錦市場</h4>
+            <p>向河原町方向移動，午餐後逛錦市場。可以吃玉子燒、豆腐、醃漬物、各種京都小吃。</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">15:30</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>回飯店休息</h4>
+            <p>清水寺到東山走路不少，下午讓爸媽泡個澡休息，晚上才有體力好好吃飯。</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">18:30</div>
+          <div class="timeline-dot timeline-dot--highlight"></div>
+          <div class="timeline-content">
+            <h4>鴨川納涼床 / 先斗町晚餐</h4>
+            <p>6 月底正好是納涼床開放季節。提前訂位，坐在鴨川邊，看流水，吃夏日料理。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="spots-grid spots-grid--2col">
+
+        <div class="spot-card reveal">
+          <div class="spot-card-header">
+            <span class="spot-tag">世界遺產 · 佛寺</span>
+            <h3 class="spot-name">清水寺</h3>
+          </div>
+          <div class="spot-story">
+            <p>建立於西元 778 年，現存本堂建於 1633 年（德川家光時代），懸在音羽山懸崖上，以 139 根大木柱支撐——沒有用一根釘子。</p>
+            <p>日語諺語「清水の舞台から飛び降りる」（從清水舞台跳下去）相當於中文的背水一戰，用來形容下定決心做大事。你站上舞台時，腳下是四百年的歷史。</p>
+            <p>音羽瀑布有三道水流：學問、戀愛、長壽，傳統上只能選一條喝——你選哪條，代表你最在乎什麼。</p>
+          </div>
+          <a href="https://www.google.com/maps/search/清水寺+京都" target="_blank" rel="noopener" class="map-link">在 Google Maps 查看 →</a>
+        </div>
+
+        <div class="spot-card spot-card--highlight reveal">
+          <div class="spot-card-header">
+            <span class="spot-tag">七不思議 · 家庭挑戰</span>
+            <h3 class="spot-name">弁慶の鐵下駄</h3>
+          </div>
+          <div class="spot-story">
+            <p>清水寺七大不思議（七個謎）之一。傳說這雙鐵下駄是武藏坊弁慶（源義經的忠臣）留下的，重達 90 公斤，一般人無法舉起。</p>
+            <p>旁邊有一支較小的「弁慶的錫杖」，讓參拜者試舉。<strong>可以安排成爸爸的試煉。</strong>這種互動小任務，讓景點不只是「看看就好」。</p>
+          </div>
+          <a href="https://www.google.com/maps/search/清水寺+弁慶+鐵下駄" target="_blank" rel="noopener" class="map-link">在 Google Maps 查看 →</a>
+        </div>
+
+        <div class="spot-card reveal">
+          <div class="spot-card-header">
+            <span class="spot-tag">傳統街道</span>
+            <h3 class="spot-name">三年坂 · 二年坂</h3>
+          </div>
+          <div class="spot-story">
+            <p>傳說在三年坂跌倒，壽命縮短三年；二年坂跌倒，縮短兩年。沒有人知道這個故事從哪裡來，但大家都走得特別小心。</p>
+            <p>這條石板街是「重要傳統建造物群保存地區」，每一棟建築都受法律保護不得改建。兩旁是扇子、漆器、和菓子、抹茶冰淇淋，慢慢逛不用急。</p>
+          </div>
+          <a href="https://www.google.com/maps/search/三年坂+二年坂+京都" target="_blank" rel="noopener" class="map-link">在 Google Maps 查看 →</a>
+        </div>
+
+        <div class="spot-card reveal">
+          <div class="spot-card-header">
+            <span class="spot-tag">400 年市場</span>
+            <h3 class="spot-name">錦市場</h3>
+          </div>
+          <div class="spot-story">
+            <p>被稱為「京の台所」（京都的廚房）。390 公尺長的窄街，兩側 130 多家店，每家都非常專業——賣豆腐的只賣豆腐，賣醬菜的只賣醬菜。</p>
+            <p>可以試吃、買小吃、找伴手禮。推薦玉子燒、川魚、京漬物。不喜歡魚腥的可以找和菓子。這裡是吃飽午餐之後慢慢逛的地方。</p>
+          </div>
+          <a href="https://www.google.com/maps/search/錦市場+京都" target="_blank" rel="noopener" class="map-link">在 Google Maps 查看 →</a>
+        </div>
+
+        <div class="spot-card spot-card--wide reveal">
+          <div class="spot-card-header">
+            <span class="spot-tag">夏日限定 · 晚餐</span>
+            <h3 class="spot-name">鴨川納涼床</h3>
+          </div>
+          <div class="spot-story">
+            <p>江戶時代開始，京都人在鴨川旁搭起木製平台（「床」），每年 5 月到 9 月開放，稱為納涼床，是純正的京都夏日傳統。6 月底正好在開放季節。</p>
+            <p>先斗町（ぽんとちょう）是最集中的區域，沿鴨川一排都是有床位的餐廳。夏夜坐在水邊，看鴨川流水和對岸的燈光，配上京料理或居酒屋料理。</p>
+            <p><strong>建議提前 1-2 週訂位</strong>，選 18:30 入座，可以看到天色漸暗，感受白天到夜晚的轉換。</p>
+          </div>
+          <a href="https://www.google.com/maps/search/先斗町+鴨川+京都" target="_blank" rel="noopener" class="map-link">在 Google Maps 查看 →</a>
+        </div>
+
+      </div>
+
+      <div class="tip-card reveal">
+        <div class="tip-icon">提醒</div>
+        <div class="tip-body">
+          <h4>Day 2 實用提醒</h4>
+          <ul>
+            <li>清水寺早上人少，08:00 前到最理想，大概 09:30 後人潮明顯增加。</li>
+            <li>三年坂石板路有點滑，媽媽建議穿好走的平底鞋。</li>
+            <li>鴨川納涼床一定要提前訂位，現場通常沒有位子。</li>
+            <li>從清水寺到先斗町步行約 25 分鐘，或搭公車（206 號）。</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       DAY 3 · 嵐山小火車 + 保津川
+  ══════════════════════════════════════ -->
+  <section id="day3" class="day-section theme-forest">
+    <div class="day-header">
+      <div class="container">
+        <div class="day-badge">
+          <span class="day-number">Day 3</span>
+          <span class="day-date">6 月 26 日（五）</span>
+        </div>
+        <h2 class="day-title">嵐山小火車<br>保津川一日遊</h2>
+        <p class="day-theme-text">京都不只是寺廟——這天是山、水、竹林。</p>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="klook-card reveal">
+        <div class="klook-card-body">
+          <p class="klook-label">已規劃活動</p>
+          <h3>嵐山小火車 + 保津川遊船 / 漂流一日遊</h3>
+          <p>含嵯峨野觀光小火車與保津川遊船，由 Klook 代理，集合出發，不需要自己安排交通與票務。</p>
+          <a href="https://www.klook.com/zh-TW/activity/154891-arashiyama-train-hozugawa-river-rafting-day-tour-from-osaka-kyoto/" target="_blank" rel="noopener" class="klook-link klook-link--large">
+            查看 Klook 行程 →
+          </a>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-time">早上</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>依 Klook 集合點出發</h4>
+            <p>確認集合地點與時間（詳見 Klook 確認信）。</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">上午</div>
+          <div class="timeline-dot timeline-dot--highlight"></div>
+          <div class="timeline-content">
+            <h4>嵯峨野觀光小火車</h4>
+            <p>從嵯峨出發到亀岡，沿保津川峽谷行駛 7.3 公里，是日本最知名的觀光鐵道之一。</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">中午</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>嵐山周邊午餐</h4>
+            <p>嵐山有很多選擇，湯豆腐、抹茶蕎麥麵、嵯峨豆腐都值得試試。</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">下午</div>
+          <div class="timeline-dot timeline-dot--highlight"></div>
+          <div class="timeline-content">
+            <h4>保津川遊船 / 漂流</h4>
+            <p>峽谷間的河流體驗。全程約 2 小時，沿途有急流也有平靜水面，是嵐山最難忘的活動。</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">傍晚</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>竹林 · 渡月橋 → 回京都</h4>
+            <p>若還有時間，走一走竹林の道。傍晚回飯店，今晚不用再出去——好好泡澡休息。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="spots-grid spots-grid--2col">
+
+        <div class="spot-card reveal">
+          <div class="spot-card-header">
+            <span class="spot-tag">觀光鐵道</span>
+            <h3 class="spot-name">嵯峨野觀光鐵道</h3>
+          </div>
+          <div class="spot-story">
+            <p>1991 年 JR 嵯峨野線改線後，舊線廢棄不用。地方政府將舊軌道改建為觀光小火車，沿保津川峽谷行駛 7.3 公里，全程約 25 分鐘。</p>
+            <p>有一節「The Rich 號」是開放式展望車廂，可以直接感受山谷風——6 月底偶爾下雨，留意當天天氣選車廂。</p>
+          </div>
+        </div>
+
+        <div class="spot-card reveal">
+          <div class="spot-card-header">
+            <span class="spot-tag">歷史水路 · 體驗</span>
+            <h3 class="spot-name">保津川</h3>
+          </div>
+          <div class="spot-story">
+            <p>江戶時代，保津川是丹波山地木材運往京都的水路。1606 年，商人角倉了以投資開鑿，讓船可以通行峽谷，帶動了京都的城市建設。</p>
+            <p>現在這條河已沒有木材船，有的是遊客乘著船，看峽谷、看激流、看倒映在水面上的山。這就是歷史轉身的方式。</p>
+          </div>
+        </div>
+
+        <div class="spot-card spot-card--wide reveal">
+          <div class="spot-card-header">
+            <span class="spot-tag">音景百選 · 竹林</span>
+            <h3 class="spot-name">竹林の道 · 渡月橋</h3>
+          </div>
+          <div class="spot-story">
+            <p>從天龍寺北門延伸的竹林步道，竹高超過 20 公尺，直徑可達 20 公分。風吹過時，竹葉的聲音已被收錄進日本「音風景百選」——一個保護聲音景觀的文化指定。</p>
+            <p>渡月橋橫跨桂川（在嵐山境內改名大堰川），橋名來自鐮倉時代龜山天皇的詩句：「くまなき月の渡るに似る」（有如皎潔月光橫渡江面）。</p>
+            <a href="https://www.google.com/maps/search/嵐山+竹林+京都" target="_blank" rel="noopener" class="map-link">在 Google Maps 查看 →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="tip-card reveal">
+        <div class="tip-icon">提醒</div>
+        <div class="tip-body">
+          <h4>Day 3 提醒</h4>
+          <ul>
+            <li>保津川漂流會濕，準備換洗衣物，重要的東西放防水袋。</li>
+            <li>這天行程比較動態，晚上不要再安排夜間景點——好好休息。</li>
+            <li>嵐山的竹林步道清早最美（人少 + 光線好），但當天已有活動，下午去即可。</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       DAY 4 · 彈性路線日
+  ══════════════════════════════════════ -->
+  <section id="day4" class="day-section theme-amber">
+    <div class="day-header">
+      <div class="container">
+        <div class="day-badge">
+          <span class="day-number">Day 4</span>
+          <span class="day-date">6 月 27 日（六）</span>
+        </div>
+        <h2 class="day-title">彈性路線日<br>早上決定去哪</h2>
+        <p class="day-theme-text">嵐山可能比較累，這天看體力和天氣，三條路線任選。</p>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="route-picker reveal">
+        <div class="route-tabs">
+          <button class="route-tab active" data-route="a">
+            <span class="route-tab-label">路線 A</span>
+            <span class="route-tab-desc">宇治抹茶</span>
+          </button>
+          <button class="route-tab" data-route="b">
+            <span class="route-tab-label">路線 B</span>
+            <span class="route-tab-desc">二條城</span>
+          </button>
+          <button class="route-tab" data-route="c">
+            <span class="route-tab-label">路線 C</span>
+            <span class="route-tab-desc">金閣寺</span>
+          </button>
+        </div>
+        <div class="route-recommend">
+          <div class="route-recommend-inner" id="routeRecommend">最推薦・適合放慢步調</div>
+        </div>
+
+        <!-- Route A: Uji -->
+        <div class="route-content active" data-route="a">
+          <div class="route-intro">
+            <h3>宇治抹茶慢旅行</h3>
+            <p class="route-suitable">適合：天氣不錯、想放慢、想吃甜點買茶。</p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-time">09:30</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>京都車站搭 JR 奈良線</h4>
+                <p>到宇治站，車程約 17 分鐘。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">10:15</div>
+              <div class="timeline-dot timeline-dot--highlight"></div>
+              <div class="timeline-content">
+                <h4>平等院・鳳翔館・庭園</h4>
+                <p>世界遺產，10 元硬幣上的那座寺。建議先參觀庭園，再進鳳翔館看國寶。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">12:30</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>宇治川旁午餐</h4>
+                <p>有些老字號茶屋也供應午餐定食，不用另外找地方。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">14:00</div>
+              <div class="timeline-dot timeline-dot--highlight"></div>
+              <div class="timeline-content">
+                <h4>抹茶甜點 · 買茶帶回家</h4>
+                <p>推薦：中村藤吉本店（明治時代老店）、伊藤久右衛門、通圓茶屋（最古老）。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">16:30</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>搭 JR 回京都</h4>
+                <p>晚上可以在河原町或京都車站附近吃飯，輕鬆收尾。</p>
+              </div>
+            </div>
+          </div>
+          <div class="spots-grid">
+            <div class="spot-card">
+              <div class="spot-card-header">
+                <span class="spot-tag">世界遺產 · 10 元硬幣</span>
+                <h3 class="spot-name">平等院鳳凰堂</h3>
+              </div>
+              <div class="spot-story">
+                <p>西元 1052 年，攝政藤原頼通將父親道長的別莊改建為寺院，隔年建造鳳凰堂作為阿彌陀堂。</p>
+                <p>這棟建築不是偶然好看——它是淨土信仰的具象化，設計目的就是讓你覺得自己站在阿彌陀如來的西方極樂世界門口。倒映在阿字池中的鳳凰堂，是這個效果的一部分。</p>
+                <p>現在它出現在日本 10 円硬幣背面。把硬幣拿出來比對一下，是真實存在的趣味。</p>
+              </div>
+              <a href="https://www.google.com/maps/search/平等院+宇治" target="_blank" rel="noopener" class="map-link">在 Google Maps 查看 →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Route B: Nijo Castle -->
+        <div class="route-content" data-route="b">
+          <div class="route-intro">
+            <h3>二條城 · 京都御苑</h3>
+            <p class="route-suitable">適合：天氣熱、下雨、或想看歷史。最穩妥的選擇。</p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-time">09:30</div>
+              <div class="timeline-dot timeline-dot--highlight"></div>
+              <div class="timeline-content">
+                <h4>二條城</h4>
+                <p>重點看二之丸御殿（需脫鞋進入）和庭園。鶯張地板走起來會發出吱吱聲，這是設計。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">12:00</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>烏丸御池 / 河原町午餐</h4>
+                <p>附近有很多選擇，壽司、蕎麥麵、定食都好找。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">14:00</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>京都御苑散步</h4>
+                <p>面積廣大，走走散散。也可以直接回飯店休息，為明天回程保留體力。</p>
+              </div>
+            </div>
+          </div>
+          <div class="spots-grid">
+            <div class="spot-card">
+              <div class="spot-card-header">
+                <span class="spot-tag">世界遺產 · 江戶幕府</span>
+                <h3 class="spot-name">二條城</h3>
+              </div>
+              <div class="spot-story">
+                <p>1603 年，德川家康在京都建造二條城，作為造訪天皇時的行館——也是向天皇與京都貴族展示幕府實力的地方。規模之大，設計之精，都是在說：「我是主人。」</p>
+                <p>二之丸御殿的「鶯張地板」（うぐいす張り）走起來會發出像鶯鳥叫聲的吱吱聲。這不是設計失誤——這是防止刺客悄悄靠近的安全機制。整棟建築都有設計邏輯。</p>
+                <p>1867 年，最後一位幕府將軍德川慶喜在此宣布「大政奉還」，終結江戶幕府 265 年統治。這個房間，是日本現代史的起點之一。</p>
+              </div>
+              <a href="https://www.google.com/maps/search/二条城+京都" target="_blank" rel="noopener" class="map-link">在 Google Maps 查看 →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Route C: Kinkakuji -->
+        <div class="route-content" data-route="c">
+          <div class="route-intro">
+            <h3>金閣寺 · 北野天滿宮</h3>
+            <p class="route-suitable">適合：爸媽很想看「那座金色的寺」。</p>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-time">09:00</div>
+              <div class="timeline-dot timeline-dot--highlight"></div>
+              <div class="timeline-content">
+                <h4>金閣寺</h4>
+                <p>早上人少，光線好。鏡湖池旁的視角最經典，建議花時間拍照再慢慢走。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">10:30</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>北野天滿宮</h4>
+                <p>學問之神，可以幫爸媽買個護身符。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">12:30</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>午餐 · 回河原町或直接休息</h4>
+                <p>北野白梅町附近有不少定食餐廳，也可以回市區。</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-time">14:30</div>
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>視體力加二條城，或咖啡館休息</h4>
+                <p>明天要早起退房，這天下午建議不要安排太多。</p>
+              </div>
+            </div>
+          </div>
+          <div class="spots-grid">
+            <div class="spot-card">
+              <div class="spot-card-header">
+                <span class="spot-tag">室町幕府 · 禪宗</span>
+                <h3 class="spot-name">金閣寺（鹿苑寺）</h3>
+              </div>
+              <div class="spot-story">
+                <p>1397 年，室町幕府第三代將軍足利義滿建造「北山殿」作為退隱後的別莊。義滿死後，依遺願改為禪宗寺院。</p>
+                <p>舍利殿外覆金箔（2003 年重新貼覆，使用約 20 公斤金箔），三層樓各用不同建築風格：一樓寢殿造，二樓武家造，三樓唐様（禪宗樣）。</p>
+                <p>1950 年，一名見習僧人放火燒毀了整座金閣。日本文豪三島由紀夫以此為靈感寫下小說《金閣寺》，探討極致之美與毀滅的關係。1955 年重建。你現在看到的，是重建之後的。</p>
+              </div>
+              <a href="https://www.google.com/maps/search/金閣寺+京都" target="_blank" rel="noopener" class="map-link">在 Google Maps 查看 →</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- /route-picker -->
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       DAY 5 · 京都車站 + 回程
+  ══════════════════════════════════════ -->
+  <section id="day5" class="day-section theme-dawn">
+    <div class="day-header">
+      <div class="container">
+        <div class="day-badge">
+          <span class="day-number">Day 5</span>
+          <span class="day-date">6 月 28 日（日）</span>
+        </div>
+        <h2 class="day-title">京都車站<br>平安回家</h2>
+        <p class="day-theme-text">回程日不跑遠，穩穩打包，帶上所有的記憶。</p>
+      </div>
+    </div>
+    <div class="container">
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-time">09:00</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>退房 · 整理行李</h4>
+            <p>確認所有物品，貴重物品放隨身行李，伴手禮妥善打包。</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">10:00</div>
+          <div class="timeline-dot timeline-dot--highlight"></div>
+          <div class="timeline-content">
+            <h4>京都車站伴手禮採買</h4>
+            <p>JR 京都伊勢丹地下街、八条口周邊。京都名產幾乎都在這裡，不用另外跑景點。</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">中午</div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h4>前往關西機場</h4>
+            <p>京都車站搭 Haruka 特急，約 75 分鐘到達關西機場。建議提早出發。</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-time">下午</div>
+          <div class="timeline-dot timeline-dot--highlight"></div>
+          <div class="timeline-content">
+            <h4>中華航空 CI153 返台</h4>
+            <p>關西機場 KIX → 台北桃園 TPE。航班時刻請出發前再次確認。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="shopping-card reveal">
+        <h3>京都車站必買清單</h3>
+        <div class="shopping-grid">
+          <div class="shopping-item">
+            <span class="shopping-icon">🍡</span>
+            <span>八橋 / 生八橋</span>
+          </div>
+          <div class="shopping-item">
+            <span class="shopping-icon">🍵</span>
+            <span>抹茶系甜點</span>
+          </div>
+          <div class="shopping-item">
+            <span class="shopping-icon">🥒</span>
+            <span>京都醃漬物</span>
+          </div>
+          <div class="shopping-item">
+            <span class="shopping-icon">🫙</span>
+            <span>宇治抹茶茶葉</span>
+          </div>
+          <div class="shopping-item">
+            <span class="shopping-icon">🧴</span>
+            <span>京都護膚品牌</span>
+          </div>
+          <div class="shopping-item">
+            <span class="shopping-icon">📿</span>
+            <span>寺廟護身符</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tip-card tip-card--warn reveal">
+        <div class="tip-icon">注意</div>
+        <div class="tip-body">
+          <h4>回程日鐵則</h4>
+          <ul>
+            <li>不要安排清水寺、伏見稻荷、嵐山等需要移動的景點。</li>
+            <li>機場要提前 2 小時以上到達，避免結帳高峰與安檢排隊。</li>
+            <li>搭 Haruka 建議提前訂位，人多時站票很不舒服。</li>
+            <li>液體、大型伴手禮記得打包進托運行李，不要帶上機。</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-block">
+          <h4>住宿</h4>
+          <p class="footer-hotel">湯之宿 松榮</p>
+          <p class="footer-addr">128 Nishishinyashiki Kaminocho<br>Shimogyo Ward, Kyoto 600-8826</p>
+          <a href="https://www.google.com/maps?q=湯之宿+松榮+128+Nishishinyashiki+Kaminocho,+Shimogyo+Ward,+Kyoto,+600-8826日本" target="_blank" rel="noopener" class="map-link">在 Google Maps 查看 →</a>
+        </div>
+        <div class="footer-block">
+          <h4>行程</h4>
+          <ul class="footer-days">
+            <li><a href="#day1">Day 1 · 抵達 · 祇園夜遊</a></li>
+            <li><a href="#day2">Day 2 · 清水寺 · 鴨川</a></li>
+            <li><a href="#day3">Day 3 · 嵐山 · 保津川</a></li>
+            <li><a href="#day4">Day 4 · 彈性路線</a></li>
+            <li><a href="#day5">Day 5 · 回程</a></li>
+          </ul>
+        </div>
+        <div class="footer-block">
+          <h4>Klook 行程</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="https://www.klook.com/zh-TW/activity/87999-kyoto-gion-night-walk-small-group-guided-tour-walking-tour/" target="_blank" rel="noopener">
+                祇園夜間導覽 →
+              </a>
+            </li>
+            <li>
+              <a href="https://www.klook.com/zh-TW/activity/154891-arashiyama-train-hozugawa-river-rafting-day-tour-from-osaka-kyoto/" target="_blank" rel="noopener">
+                嵐山小火車 + 保津川 →
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>京都五日 · 家の旅 · 2026 · 航班時刻請出發前再次確認官方資訊</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#hero" class="back-top" id="backTop" aria-label="回到頂部">↑</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
