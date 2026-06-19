@@ -599,9 +599,10 @@ ul { list-style: none; }
   border: 0;
   border-radius: 10px;
   margin-top: 14px;
-  opacity: 0.88;
   background: rgba(255,255,255,0.05);
 }
+
+.earlynight-section .route-map-frame { opacity: 0.88; }
 
 @media (max-width: 768px) {
   .earlynight-grid { grid-template-columns: 1fr; }
