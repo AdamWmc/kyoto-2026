@@ -143,6 +143,13 @@ ul { list-style: none; }
 .nav-day:hover { background: var(--surface); color: var(--ink); }
 .nav-day.active { background: var(--ink); color: var(--white); }
 
+.nav-day--extra {
+  border-left: 1px solid var(--border);
+  margin-left: 4px;
+  padding-left: 14px;
+  color: var(--ink-4);
+}
+
 /* ═══════════════════════════════════════
    Hero
 ═══════════════════════════════════════ */
@@ -461,6 +468,135 @@ ul { list-style: none; }
   transition: opacity 0.2s;
 }
 .klook-link:hover { opacity: 0.7; }
+
+/* ═══════════════════════════════════════
+   Early Morning / Late Night Guide
+═══════════════════════════════════════ */
+.earlynight-section {
+  padding: 80px 0;
+  background: var(--ink);
+}
+
+.earlynight-section .section-eyebrow { color: rgba(255,255,255,0.35); }
+.earlynight-section .section-title { color: var(--white); }
+
+.earlynight-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.earlynight-panel {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.earlynight-panel-header {
+  padding: 28px 28px 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.earlynight-panel-header--early {
+  background: linear-gradient(135deg, rgba(201,169,110,0.15) 0%, rgba(201,169,110,0.05) 100%);
+}
+
+.earlynight-panel-header--night {
+  background: linear-gradient(135deg, rgba(80,60,160,0.2) 0%, rgba(80,60,160,0.05) 100%);
+}
+
+.earlynight-time {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.earlynight-panel-header--early .earlynight-time { color: var(--gold); }
+.earlynight-panel-header--night .earlynight-time { color: #a090e0; }
+
+.earlynight-panel-header h3 {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 4px;
+}
+
+.earlynight-panel-header p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+}
+
+.earlynight-items {
+  padding: 8px 0;
+}
+
+.earlynight-item {
+  padding: 20px 28px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: background 0.2s;
+}
+
+.earlynight-item:last-child { border-bottom: none; }
+.earlynight-item:hover { background: rgba(255,255,255,0.03); }
+
+.earlynight-item-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.earlynight-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.5);
+  letter-spacing: 0.04em;
+}
+
+.earlynight-badge--run { background: rgba(40,130,80,0.25); color: #6de0a0; }
+.earlynight-badge--food { background: rgba(201,169,110,0.2); color: var(--gold); }
+.earlynight-badge--shop { background: rgba(80,60,160,0.25); color: #a090e0; }
+
+.earlynight-open {
+  font-size: 12px;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.02em;
+}
+
+.earlynight-item h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+.earlynight-item p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.75;
+  margin-bottom: 10px;
+}
+
+.earlynight-item .map-link { color: rgba(255,255,255,0.4); font-size: 12px; }
+.earlynight-item .map-link:hover { color: var(--gold); opacity: 1; }
+
+@media (max-width: 768px) {
+  .earlynight-grid { grid-template-columns: 1fr; }
+  .earlynight-panel-header { padding: 24px 20px 20px; }
+  .earlynight-item { padding: 18px 20px; }
+}
 
 /* ═══════════════════════════════════════
    Day Sections
