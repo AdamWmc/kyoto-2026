@@ -145,3 +145,83 @@
     }
   });
 })();
+
+// ── Spot card photo injection (Wikimedia Commons) ──
+(function initSpotPhotos() {
+  const BASE = 'https://commons.wikimedia.org/wiki/Special:FilePath/';
+  const SIZE = '?width=800';
+
+  // Wikimedia Commons filenames for known landmarks
+  const PHOTOS = {
+    '清水寺':        'Kiyomizudera01s5s4592.jpg',
+    '平等院':        'Byodo-in_Phoenix_Hall.JPG',
+    '花見小路':      'Hanamikoji_Kyoto_Japan01s3s4590.jpg',
+    '八坂神社':      'Yasaka-jinja_Kyoto.jpg',
+    '竹林の道':      'Arashiyama_Bamboo_Grove_path.jpg',
+    '嵯峨野觀光鐵道': 'SaganoScenicRailway_001.jpg',
+    '天龍寺':        'Tenryu-ji_garden_JP_Kyoto.jpg',
+    '西本願寺':      'Nishi-honganji_2009.jpg',
+    '東本願寺':      'Higashi_Honganji_Kyoto.jpg',
+    '宇治上神社':    'Ujigami-jinja_Uji_Kyoto.jpg',
+    '先斗町':        'Pontocho_Kyoto.jpg',
+    '三年坂':        'Sannenzaka_Higashiyama_Kyoto.jpg',
+    '錦市場':        'Nishiki_Market_Kyoto_2015.jpg',
+    '渡月橋':        'Arashiyama_Kyoto_Togetsu-kyo.jpg',
+    '保津川':        'Hozu_rapids_Kyoto.jpg',
+    '白川・白川南通': 'Shirakawa_canal_gion.jpg',
+  };
+
+  // Gradient fallbacks keyed by section id — match each day's colour theme
+  const GRADS = {
+    earlynight: ['#0a0e1a', '#1a2535'],
+    day1:       ['#120d28', '#2a1848'],
+    day2:       ['#3a0a12', '#721525'],
+    day3:       ['#0a2018', '#184830'],
+    day4:       ['#381c00', '#724200'],
+  };
+
+  function makeGradient(card) {
+    const id = card.closest('section')?.id ?? '';
+    const [c1, c2] = GRADS[id] ?? ['#1a1a2e', '#2d2d4e'];
+    return `linear-gradient(150deg, ${c1} 0%, ${c2} 100%)`;
+  }
+
+  function addLabel(wrap, card) {
+    const raw = card.querySelector('.spot-name')?.textContent ?? '';
+    const short = raw.split(/[·・]/)[0].trim().replace(/\s/g, '').slice(0, 4);
+    const el = document.createElement('span');
+    el.className = 'spot-card-photo-label';
+    el.textContent = short;
+    wrap.appendChild(el);
+  }
+
+  document.querySelectorAll('.spot-card').forEach((card) => {
+    const nameEl = card.querySelector('.spot-name');
+    if (!nameEl) return;
+
+    const name = nameEl.textContent;
+    const key = Object.keys(PHOTOS).find((k) => name.includes(k));
+
+    const wrap = document.createElement('div');
+    wrap.className = 'spot-card-photo';
+
+    if (key) {
+      const img = document.createElement('img');
+      img.alt = key;
+      img.loading = 'lazy';
+      img.addEventListener('error', () => {
+        img.remove();
+        wrap.style.background = makeGradient(card);
+        addLabel(wrap, card);
+      });
+      img.src = BASE + PHOTOS[key] + SIZE;
+      wrap.appendChild(img);
+    } else {
+      wrap.style.background = makeGradient(card);
+      addLabel(wrap, card);
+    }
+
+    const header = card.querySelector('.spot-card-header');
+    if (header) card.insertBefore(wrap, header);
+  });
+})();
