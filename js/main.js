@@ -146,32 +146,30 @@
   });
 })();
 
-// ── Spot card photo injection (Wikimedia Commons) ──
+// ── Spot card photo injection (Wikipedia REST API) ──
 (function initSpotPhotos() {
-  const BASE = 'https://commons.wikimedia.org/wiki/Special:FilePath/';
-  const SIZE = '?width=800';
-
-  // Wikimedia Commons filenames for known landmarks
-  const PHOTOS = {
-    '清水寺':        'Kiyomizudera01s5s4592.jpg',
-    '平等院':        'Byodo-in_Phoenix_Hall.JPG',
-    '花見小路':      'Hanamikoji_Kyoto_Japan01s3s4590.jpg',
-    '八坂神社':      'Yasaka-jinja_Kyoto.jpg',
-    '竹林の道':      'Arashiyama_Bamboo_Grove_path.jpg',
-    '嵯峨野觀光鐵道': 'SaganoScenicRailway_001.jpg',
-    '天龍寺':        'Tenryu-ji_garden_JP_Kyoto.jpg',
-    '西本願寺':      'Nishi-honganji_2009.jpg',
-    '東本願寺':      'Higashi_Honganji_Kyoto.jpg',
-    '宇治上神社':    'Ujigami-jinja_Uji_Kyoto.jpg',
-    '先斗町':        'Pontocho_Kyoto.jpg',
-    '三年坂':        'Sannenzaka_Higashiyama_Kyoto.jpg',
-    '錦市場':        'Nishiki_Market_Kyoto_2015.jpg',
-    '渡月橋':        'Arashiyama_Kyoto_Togetsu-kyo.jpg',
-    '保津川':        'Hozu_rapids_Kyoto.jpg',
-    '白川・白川南通': 'Shirakawa_canal_gion.jpg',
+  // Map spot name keywords → English Wikipedia article title
+  const WIKI = {
+    '清水寺':        'Kiyomizudera',
+    '平等院':        'Byōdō-in',
+    '花見小路':      'Hanamikoji',
+    '八坂神社':      'Yasaka Shrine',
+    '竹林の道':      'Bamboo Grove, Arashiyama',
+    '嵯峨野觀光鐵道': 'Sagano Scenic Railway',
+    '天龍寺':        'Tenryū-ji',
+    '西本願寺':      'Nishi Hongan-ji',
+    '東本願寺':      'Higashi Hongan-ji',
+    '宇治上神社':    'Ujigami Shrine',
+    '先斗町':        'Ponto-chō',
+    '三年坂':        'Ninenzaka',
+    '錦市場':        'Nishiki Market',
+    '渡月橋':        'Togetsu-kyo',
+    '保津川':        'Hozu River',
+    '白川':          'Shirakawa, Kyoto',
+    '弁慶':          'Benkei',
   };
 
-  // Gradient fallbacks keyed by section id — match each day's colour theme
+  // Per-section gradient fallbacks (match each day's colour theme)
   const GRADS = {
     earlynight: ['#0a0e1a', '#1a2535'],
     day1:       ['#120d28', '#2a1848'],
@@ -180,48 +178,53 @@
     day4:       ['#381c00', '#724200'],
   };
 
-  function makeGradient(card) {
+  function gradient(card) {
     const id = card.closest('section')?.id ?? '';
-    const [c1, c2] = GRADS[id] ?? ['#1a1a2e', '#2d2d4e'];
-    return `linear-gradient(150deg, ${c1} 0%, ${c2} 100%)`;
+    const [a, b] = GRADS[id] ?? ['#1a1a2e', '#2d2d4e'];
+    return `linear-gradient(150deg,${a},${b})`;
   }
 
-  function addLabel(wrap, card) {
-    const raw = card.querySelector('.spot-name')?.textContent ?? '';
-    const short = raw.split(/[·・]/)[0].trim().replace(/\s/g, '').slice(0, 4);
-    const el = document.createElement('span');
-    el.className = 'spot-card-photo-label';
-    el.textContent = short;
-    wrap.appendChild(el);
+  function addLabel(wrap, name) {
+    const lbl = document.createElement('span');
+    lbl.className = 'spot-card-photo-label';
+    lbl.textContent = name.split(/[·・\s]/)[0].slice(0, 4);
+    wrap.appendChild(lbl);
   }
 
   document.querySelectorAll('.spot-card').forEach((card) => {
     const nameEl = card.querySelector('.spot-name');
-    if (!nameEl) return;
+    const header = card.querySelector('.spot-card-header');
+    if (!nameEl || !header) return;
 
-    const name = nameEl.textContent;
-    const key = Object.keys(PHOTOS).find((k) => name.includes(k));
+    const name = nameEl.textContent.trim();
+    const wikiKey = Object.keys(WIKI).find((k) => name.includes(k));
 
+    // Build photo container — gradient shows immediately as baseline
     const wrap = document.createElement('div');
     wrap.className = 'spot-card-photo';
+    wrap.style.background = gradient(card);
+    addLabel(wrap, name);
+    card.insertBefore(wrap, header);
 
-    if (key) {
-      const img = document.createElement('img');
-      img.alt = key;
-      img.loading = 'lazy';
-      img.addEventListener('error', () => {
-        img.remove();
-        wrap.style.background = makeGradient(card);
-        addLabel(wrap, card);
-      });
-      img.src = BASE + PHOTOS[key] + SIZE;
-      wrap.appendChild(img);
-    } else {
-      wrap.style.background = makeGradient(card);
-      addLabel(wrap, card);
-    }
+    if (!wikiKey) return;
 
-    const header = card.querySelector('.spot-card-header');
-    if (header) card.insertBefore(wrap, header);
+    // Fetch real thumbnail from Wikipedia REST API
+    fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(WIKI[wikiKey])}`)
+      .then((r) => r.json())
+      .then((data) => {
+        const thumb = data.thumbnail?.source;
+        if (!thumb) return;
+        // Replace size token to get 800px wide version
+        const src = thumb.replace(/\/\d+px-/, '/800px-');
+        const img = new Image();
+        img.alt = wikiKey;
+        img.loading = 'lazy';
+        img.onload = () => {
+          wrap.querySelector('.spot-card-photo-label')?.remove();
+          wrap.insertBefore(img, wrap.firstChild);
+        };
+        img.src = src;
+      })
+      .catch(() => { /* keep gradient on network error */ });
   });
 })();
