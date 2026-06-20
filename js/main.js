@@ -214,17 +214,15 @@
 
     if (!wikiKey) return;
 
-    // Fetch real thumbnail from Wikipedia REST API
+    // Fetch real photo from Wikipedia REST API
     fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(WIKI[wikiKey])}`)
       .then((r) => r.json())
       .then((data) => {
-        const thumb = data.thumbnail?.source;
-        if (!thumb) return;
-        // Replace size token to get 800px wide version
-        const src = thumb.replace(/\/\d+px-/, '/800px-');
+        // Prefer full-res original; fall back to thumbnail as-is
+        const src = data.originalimage?.source || data.thumbnail?.source;
+        if (!src) return;
         const img = new Image();
         img.alt = wikiKey;
-        img.loading = 'lazy';
         img.onload = () => {
           wrap.querySelector('.spot-card-photo-label')?.remove();
           wrap.insertBefore(img, wrap.firstChild);
