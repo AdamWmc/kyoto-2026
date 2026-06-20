@@ -167,6 +167,12 @@
     '保津川':        'Hozu River',
     '白川':          'Shirakawa, Kyoto',
     '弁慶':          'Benkei',
+    '二條城':        'Nijō Castle',
+    '京都御苑':      'Kyoto Imperial Palace',
+    '金閣寺':        'Kinkaku-ji',
+    '北野天滿宮':    'Kitano Tenman-gū',
+    '鴨川':          'Kamo River, Kyoto',
+    '三條大橋':      'Sanjō Bridge',
   };
 
   // Per-section gradient fallbacks (match each day's colour theme)
