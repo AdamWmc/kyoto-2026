@@ -386,6 +386,21 @@ ul { list-style: none; }
   padding: 80px 0;
   background: var(--surface);
 }
+
+/* Local Life around 松榮 */
+.local-section {
+  padding: 80px 0;
+  background: var(--white);
+}
+.local-lead {
+  max-width: 760px;
+  margin: -24px auto 48px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--ink-3);
+}
+.local-lead strong { color: var(--ink); }
 .rain-subhead {
   font-family: var(--font-serif);
   font-size: 22px;
