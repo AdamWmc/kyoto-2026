@@ -387,6 +387,12 @@ ul { list-style: none; }
   background: var(--surface);
 }
 
+/* Kyoto University / Sakyo stroll */
+.kyodai-section {
+  padding: 80px 0;
+  background: var(--surface);
+}
+
 /* Local Life around 松榮 */
 .local-section {
   padding: 80px 0;
